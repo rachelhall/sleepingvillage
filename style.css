@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'GTHaptikWeb','GT Haptik Web','Helvetica',Arial,sans-serif;
+    letter-spacing: .5rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'MrsEavesAllSmallCapsOT','MrsEaves',Georgia,serif;
+    margin: 0 auto;
+    color: #eddecd;
+    font-size: 1.714285714285714em;
+    line-height: 1em;
+    letter-spacing: .1em;
+
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a {
+    position: relative;
+}
+
+li a:hover::before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        color: red;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.hero {
+    background-color: #ce995e;
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 6px solid #2e1f03;
+    border-left: 6px solid #2e1f03;
+    border-right: 6px solid #2e1f03;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    background: url(img/line_bg.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70%;
+    opacity: 0.5;
+}
+
+
+.hero h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #1b5769;
+}
+
+.fa-angle-double-down {
+    position: absolute;
+    bottom: 15px;
+    opacity: .5;
+
+    
+}
+
+#anim {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+@keyframes bounce {
+    0% 100% {
+        transform: translateY(-15px)
+    }
+    50% {
+        transform: translateY(5px)
+    }
+}
+
+.home-header {
+    display: flex;
+}
+
+.home-header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.home-header li {
+    padding: .4em 0;
+    font-family: 'GTHaptikWeb','GT Haptik Web','Helvetica',Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.logo-small {
+    border: 3px solid #2e1f03;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    text-dir
+    
+}
+.nav {
+    border: 6px solid #2e1f03;
+    border-bottom: 0;
+    position: relative;
+    transition: background-color ease .6s, color ease .3s;
+    background-color: #eddecd;
+}
+.container  {
+    border: 6px solid #2e1f03;
+    border-bottom: 0;
+    border-left: 0;
+    position: relative;
+    transition: background-color ease .6s, color ease .3s;
+    background-color: #eddecd;
+    
+
+}
+
+.logo {
+    width: 8%;
+    border-right: 0;
+}
+
+.logo h3 {
+    line-height: 1;
+    text-align: center;
+}
+
+.menu {
+    width: 92%;
+}
+
+.half {
+    width: 50%;
+}
+
+.inline-container {
+    display: flex;
+    border: 0;
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+}
+
+.vertical-letter {
+    writing-mode: horizontal-tb;
+}
+
+.horizontal-letter {
+    writing-mode: vertical-lr;
+    transform: translateY(5px)
+}
+
+.content-container {
+    width: 100%;
+}
+
+.content-container h1, h2, h3, h4 {
+    margin: 0 auto;
+}
+
+.left-panel {
+    height: 100%;
+    padding: 50px;
+}
+
+.top-left-card {
+    border: 6px solid #2e1f03;
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    padding: 1em 15px;
+    margin: 0 0 15px 0;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.container:hover {
+    background-color: #71a078;
+    color: #eddecd;
+}
+
+footer {
+    display: flex;
+    background-color: #71a078;
+    border: 6px solid #2e1f03;
+    padding: 3em;
+    justify-content: space-around;
+}
+
+footer p, h2, h3{
+    text-align: center;
+    padding: 10px;
+    line-height: 1;
+}
+
+ img {
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+    padding: 30px;
+}
+
+
+iframe {
+    margin: 50px auto;
+    display: block;
+}
